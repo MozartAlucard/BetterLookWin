@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Si tienes .NET 8 o 9 en vez de 10, cambia este valor a net8.0-windows o net9.0-windows (y lo mismo en BetterLookWin.csproj). -->
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>BetterLookWin.Contracts</RootNamespace>
+    <AssemblyName>BetterLookWin.Contracts</AssemblyName>
+  </PropertyGroup>
+
+</Project>

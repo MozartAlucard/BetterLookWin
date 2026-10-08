@@ -1,0 +1,35 @@
+BETTER LOOK WINDOWS ツ  -  versión portable
+
+CÓMO USARLA
+1. Extrae esta carpeta completa donde quieras (por ejemplo, Documentos o el Escritorio).
+   No la ejecutes desde dentro del ZIP.
+2. Abre BetterLookWin.exe.
+3. Para agregar funciones, pulsa "+" y elige el ZIP de la función (o arrástralo a la ventana).
+
+NO NECESITAS INSTALAR NADA
+Trae todo lo necesario, incluido .NET.
+
+AVISO DE WINDOWS ("Windows protegió su PC")
+La app todavía no tiene firma digital, así que Windows SmartScreen puede mostrar este aviso la primera vez.
+Es normal en programas nuevos. Para continuar: pulsa "Más información" y luego "Ejecutar de todas formas".
+Si quieres comprobar que el ZIP no fue modificado, compara su huella SHA256 con la publicada en la página de descarga:
+   PowerShell:  Get-FileHash .\BetterLookWin-<versión>-win-x64.zip -Algorithm SHA256
+
+FUNCIONES
+Las funciones se instalan con el botón "+" (elige el ZIP de la función o arrástralo a la ventana). La app copia su
+contenido a la carpeta de funciones, así que después puedes mover o borrar el ZIP sin que la función deje de andar.
+En la pantalla principal puedes ver la carpeta de funciones, abrirla ("Abrir") o cambiarla de lugar ("Cambiar...").
+Si una función trae un archivo ficon.png, se usa como miniatura de su tarjeta.
+
+INICIAR CON WINDOWS
+La primera vez que la abres queda iniciando con Windows (aparece en Administrador de tareas > Aplicaciones de inicio)
+y arranca directo en la bandeja del sistema. Puedes desactivarlo con el interruptor "Iniciar con Windows" de la
+ventana, desde el menú del ícono de la bandeja, o desde el Administrador de tareas.
+Si cambias la carpeta de lugar, la app actualiza la ruta sola la próxima vez que la abras.
+
+DÓNDE GUARDA SUS DATOS
+%AppData%\BetterLookWin   (ajustes; y las funciones instaladas si no cambiaste la carpeta de funciones)
+
+CÓMO DESINSTALARLA
+Desactiva "Iniciar con Windows", cierra la app desde el ícono de la bandeja y borra la carpeta. Si también quieres borrar tus ajustes y funciones,
+borra %AppData%\BetterLookWin.

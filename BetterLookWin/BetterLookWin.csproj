@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>BetterLookWin</RootNamespace>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+
+    <!-- Versión y datos que salen en las propiedades del .exe -->
+    <Version>0.9.0</Version>
+    <AssemblyTitle>Better Look Windows</AssemblyTitle>
+    <Product>Better Look Windows</Product>
+    <Company>Better Look Windows</Company>
+    <Description>Organizador de funciones para mejorar el aspecto de Windows.</Description>
+    <Copyright>Copyright © 2026</Copyright>
+
+    <!-- Publicación -->
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\icon.png" />
+    <Resource Include="Assets\icon.ico" />
+    <Resource Include="Assets\splash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetterLookWin.Contracts\BetterLookWin.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
